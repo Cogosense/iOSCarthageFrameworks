@@ -50,9 +50,7 @@ node('osx && ios') {
         }
 
         stage ('Build') {
-            sh 'env && carthage update --platform iOS'
-            sh 'tar -C Carthage/Build/iOS -cjf Zip.framework.tar.bz2 Zip.framework'
-            sh 'tar -C Carthage/Build/iOS -cjf iOSDFULibrary.framework.tar.bz2 iOSDFULibrary.framework'
+            sh 'make'
         }
 
         stage ('Archive Artifacts') {

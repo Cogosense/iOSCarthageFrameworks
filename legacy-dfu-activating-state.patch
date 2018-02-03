@@ -1,0 +1,31 @@
+diff --git a/iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift b/iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift
+index c6874fa..9590280 100644
+--- a/iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift
++++ b/iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift
+@@ -478,7 +478,13 @@ internal class BaseCommonDFUPeripheral<TD : DFUPeripheralDelegate, TS : DFUServi
+             activating = false
+             // This part of firmware has been successfully sent
+             if (delegate?.peripheralDidDisconnectAfterFirmwarePartSent() ?? false) {
+-                connect()
++                if newAddressExpected {
++                    newAddressExpected = false
++                    // Scan for a new device and connect to it
++                    switchToNewPeripheralAndConnect()
++                } else {
++                    connect()
++                }
+             }
+         } else {
+             super.peripheralDidDisconnect()
+diff --git a/iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift b/iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift
+index 24339e9..cb8decc 100644
+--- a/iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift
++++ b/iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift
+@@ -173,6 +173,7 @@ internal class LegacyDFUPeripheral : BaseCommonDFUPeripheral<LegacyDFUExecutor,
+      */
+     func activateAndReset() {
+         activating = true
++        newAddressExpected = true;
+         dfuService!.sendActivateAndResetRequest(
+             // onSuccess the device gets disconnected and centralManager(_:didDisconnectPeripheral:error) will be called
+             onError: defaultErrorCallback

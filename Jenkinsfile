@@ -56,7 +56,7 @@ node('osx && ios') {
         stage ('Archive Artifacts') {
             // Archive the SCM logs, the framework directory
             step([$class: 'ArtifactArchiver',
-                artifacts: 'SCM/**, Zip.framework.tar.bz2, iOSDFULibrary.framework.tar.bz2',
+                artifacts: 'SCM/**, *.framework.tar.bz2',
                 fingerprint: true,
                 onlyIfSuccessful: true])
         }

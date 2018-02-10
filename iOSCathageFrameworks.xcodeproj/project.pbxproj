@@ -23,9 +23,24 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = iOSDFULibrary.framework;
+			passBuildSettingsInEnvironment = 1;
+			productName = iOSDfuFramework;
+		};
+		F1EEB7CA202BE38D00BCB173 /* UICircularProgressRing.framework */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = F1EEB7CB202BE38D00BCB173 /* Build configuration list for PBXLegacyTarget "UICircularProgressRing.framework" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = UICircularProgressRing.framework;
 			passBuildSettingsInEnvironment = 1;
 			productName = iOSDfuFramework;
 		};
@@ -42,9 +57,12 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F1EEB7CA202BE38D00BCB173 = {
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSDFULibrary" */;
+			buildConfigurationList = F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCathageFrameworks" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -56,6 +74,7 @@
 			projectRoot = "";
 			targets = (
 				F1AE1E73201BBAD700E9BA09 /* iOSDFULibrary.framework */,
+				F1EEB7CA202BE38D00BCB173 /* UICircularProgressRing.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -110,6 +129,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -155,6 +175,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -185,10 +206,37 @@
 			};
 			name = Release;
 		};
+		F1EEB7CC202BE38D00BCB173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DH2J9DNHNM;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1EEB7CD202BE38D00BCB173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DH2J9DNHNM;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSDFULibrary" */ = {
+		F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCathageFrameworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1AE1E74201BBAD700E9BA09 /* Debug */,
@@ -202,6 +250,15 @@
 			buildConfigurations = (
 				F1AE1E77201BBAD700E9BA09 /* Debug */,
 				F1AE1E78201BBAD700E9BA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1EEB7CB202BE38D00BCB173 /* Build configuration list for PBXLegacyTarget "UICircularProgressRing.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EEB7CC202BE38D00BCB173 /* Debug */,
+				F1EEB7CD202BE38D00BCB173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

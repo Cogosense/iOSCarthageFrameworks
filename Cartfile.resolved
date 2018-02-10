@@ -1,1 +1,2 @@
 github "NordicSemiconductor/IOS-Pods-DFU-Library" "4.1.1"
+github "luispadron/UICircularProgressRing" "v1.7.6"

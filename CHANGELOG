@@ -1,0 +1,9 @@
+
+Production 4.4.0 created on Mon 12 Feb 2018 17:28:08 PST
+================================================================================
+8d2cbf0: steve.williams@telxio.com               : generalized old iOS DFU component to become holder for multiple Carthage managed dependencies
+c3b79bd: steve.williams@telxio.com               : temporary fix for https://github.com/NordicSemiconductor/IOS-Pods-DFU-Library/issues/179
+0688c11: steve.williams@telxio.com               : create project to wrap DFU library for includion in Cogosense client workspace
+81ab84c: steve.williams@telxio.com               : debug PATH issue
+aead222: steve.williams@telxio.com               : change name of build stage
+da67caf: steve.williams@telxio.com               : Initial commit of DFU framework

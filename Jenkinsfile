@@ -1,6 +1,7 @@
+def cron_spec = BRANCH_NAME == 'master' ? 'H 0 * * *' : ''
 properties([
     buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '30')),
-    pipelineTriggers([cron('H 0 * * *')])
+    pipelineTriggers([cron(cron_spec)])
 ])
 
 node('osx && ios') {

@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PopupDialog.framework.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>UICircularProgressRing.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 		<key>iOSDFULibrary.framework copy.xcscheme</key>
 		<dict>
@@ -17,7 +22,7 @@
 		<key>iOSDFULibrary.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>iOSDfuFramework.xcscheme</key>
 		<dict>
@@ -33,6 +38,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F1AE1E73201BBAD700E9BA09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1BFE4882099930000F0DC64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -4,7 +4,7 @@ BUILT_PRODUCTS_DIR ?= $(TOPDIR)/build
 CARTHAGE_SRCDIR = $(TOPDIR)/Carthage/Checkouts
 CARTHAGE_BUILDDIR = $(TOPDIR)/Carthage/Build/iOS
 
-all install : iOSDFULibrary.framework UICircularProgressRing.framework
+all install : iOSDFULibrary.framework UICircularProgressRing.framework PopupDialog.framework
 
 # ======== iOSDFULibrary (Zip)  ===========
 
@@ -21,7 +21,7 @@ $(IOSDFULIBRARY_SRCDIR) :
 	(cd Carthage/Checkouts/IOS-Pods-DFU-Library && patch -p1 < ../../../legacy-dfu-activating-state.patch)
 
 $(IOSDFULIBRARY_FRAMEWORKBUNDLES) :
-	carthage build --verbose IOS-Pods-DFU-Library
+	carthage build --verbose --platform iOS IOS-Pods-DFU-Library
 
 CLEANFILES += $(IOSDFULIBRARY_TARBALLS) $(IOSDFULIBRARY_BUILT_PRODUCTS)
 
@@ -39,9 +39,25 @@ $(UICIRCULARPROGRESSRING_SRCDIR) :
 	carthage checkout UICircularProgressRing
 
 $(UICIRCULARPROGRESSRING_FRAMEWORKBUNDLES) :
-	carthage build --verbose UICircularProgressRing
+	carthage build --verbose --platform iOS UICircularProgressRing
 
-CLEANFILES += $(UICIRCULARPROGRESSRING_TARBALLS) $(UICIRCULARPROGRESSRING_BUILT_PRODUCTS)
+# ======== PopupDialog ===========
+
+POPUPDIALOG_SRCDIR = $(CARTHAGE_SRCDIR)/PopupDialog
+POPUPDIALOG_FRAMEWORKS = PopupDialog.framework DynamicBlurView.framework
+POPUPDIALOG_FRAMEWORKBUNDLES = $(addprefix $(CARTHAGE_BUILDDIR)/, $(POPUPDIALOG_FRAMEWORKS))
+POPUPDIALOG_TARBALLS = $(addsuffix .tar.bz2, $(POPUPDIALOG_FRAMEWORKS))
+POPUPDIALOG_BUILT_PRODUCTS = $(addprefix $(BUILT_PRODUCTS_DIR)/, $(POPUPDIALOG_FRAMEWORKS))
+
+$(POPUPDIALOG_FRAMEWORKS) : $(POPUPDIALOG_SRCDIR) $(POPUPDIALOG_FRAMEWORKBUNDLES) $(POPUPDIALOG_TARBALLS) $(POPUPDIALOG_BUILT_PRODUCTS)
+
+$(POPUPDIALOG_SRCDIR) :
+	carthage checkout PopupDialog
+
+$(POPUPDIALOG_FRAMEWORKBUNDLES) :
+	carthage build --verbose --platform iOS PopupDialog
+
+CLEANFILES += $(POPUPDIALOG_TARBALLS) $(POPUPDIALOG_BUILT_PRODUCTS)
 
 # ======= Common recipes ===========
 #

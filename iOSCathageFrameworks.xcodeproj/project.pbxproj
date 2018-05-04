@@ -30,6 +30,20 @@
 			passBuildSettingsInEnvironment = 1;
 			productName = iOSDfuFramework;
 		};
+		F1BFE4882099930000F0DC64 /* PopupDialog.framework */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = F1BFE4892099930000F0DC64 /* Build configuration list for PBXLegacyTarget "PopupDialog.framework" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = PopupDialog.framework;
+			passBuildSettingsInEnvironment = 1;
+			productName = iOSDfuFramework;
+		};
 		F1EEB7CA202BE38D00BCB173 /* UICircularProgressRing.framework */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
@@ -57,6 +71,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F1BFE4882099930000F0DC64 = {
+						ProvisioningStyle = Automatic;
+					};
 					F1EEB7CA202BE38D00BCB173 = {
 						ProvisioningStyle = Automatic;
 					};
@@ -75,6 +92,7 @@
 			targets = (
 				F1AE1E73201BBAD700E9BA09 /* iOSDFULibrary.framework */,
 				F1EEB7CA202BE38D00BCB173 /* UICircularProgressRing.framework */,
+				F1BFE4882099930000F0DC64 /* PopupDialog.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +224,33 @@
 			};
 			name = Release;
 		};
+		F1BFE48A2099930000F0DC64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DH2J9DNHNM;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1BFE48B2099930000F0DC64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DH2J9DNHNM;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F1EEB7CC202BE38D00BCB173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -250,6 +295,15 @@
 			buildConfigurations = (
 				F1AE1E77201BBAD700E9BA09 /* Debug */,
 				F1AE1E78201BBAD700E9BA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1BFE4892099930000F0DC64 /* Build configuration list for PBXLegacyTarget "PopupDialog.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BFE48A2099930000F0DC64 /* Debug */,
+				F1BFE48B2099930000F0DC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

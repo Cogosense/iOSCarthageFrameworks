@@ -7,3 +7,12 @@ c3b79bd: steve.williams@telxio.com               : temporary fix for https://git
 81ab84c: steve.williams@telxio.com               : debug PATH issue
 aead222: steve.williams@telxio.com               : change name of build stage
 da67caf: steve.williams@telxio.com               : Initial commit of DFU framework
+
+Production 4.4.1 created on Sat  5 May 2018 15:25:14 PDT
+================================================================================
+4fdc679: steve.williams@telxio.com               : add missing cleanfiles
+c714b20: steve.williams@telxio.com               : issue Cogosense/Client#36 add PopupDialog.framework for permissions manager
+898ca50: steve.williams@telxio.com               : Merge branch 'master' into opsqa
+d78b1a6: steve.williams@telxio.com               : limit time trigger builds to master branch only
+ef1bffe: steve.williams@telxio.com               : Merge branch 'master' into opsqa
+c9b3865: steve.williams@telxio.com               : export schemes and set dependencies for workspace

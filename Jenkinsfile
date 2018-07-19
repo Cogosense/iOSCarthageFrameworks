@@ -51,9 +51,11 @@ node('osx && ios') {
         }
 
         stage ('Build') {
-            Utils.&upgradeBrew()
-            Utils.&brewUpstall('carthage')
-            sh 'make'
+            withEnv(['PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin']) {
+                Utils.&upgradeBrew()
+                Utils.&brewUpstall('carthage')
+                sh 'make'
+            }
         }
 
         stage ('Archive Artifacts') {

@@ -51,6 +51,8 @@ node('osx && ios') {
         }
 
         stage ('Build') {
+            Utils.&upgradeBrew()
+            Utils.&brewUpstall('carthage')
             sh 'make'
         }
 

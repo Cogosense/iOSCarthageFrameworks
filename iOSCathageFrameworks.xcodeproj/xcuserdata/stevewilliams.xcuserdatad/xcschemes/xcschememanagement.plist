@@ -7,12 +7,12 @@
 		<key>PopupDialog.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>7</integer>
 		</dict>
 		<key>UICircularProgressRing.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
 		<key>iOSDFULibrary.framework copy.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>iOSDFULibrary.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>6</integer>
 		</dict>
 		<key>iOSDfuFramework.xcscheme</key>
 		<dict>

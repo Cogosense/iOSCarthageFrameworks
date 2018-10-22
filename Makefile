@@ -18,7 +18,6 @@ $(IOSDFULIBRARY_FRAMEWORKS): $(IOSDFULIBRARY_SRCDIR) $(IOSDFULIBRARY_FRAMEWORKBU
 
 $(IOSDFULIBRARY_SRCDIR) :
 	carthage checkout IOS-Pods-DFU-Library
-	(cd Carthage/Checkouts/IOS-Pods-DFU-Library && patch -p1 < ../../../legacy-dfu-activating-state.patch)
 
 $(IOSDFULIBRARY_FRAMEWORKBUNDLES) :
 	carthage build --verbose --platform iOS IOS-Pods-DFU-Library

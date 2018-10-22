@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1BFE4882099930000F0DC64"
-               BuildableName = "PopupDialog.framework"
-               BlueprintName = "PopupDialog.framework"
-               ReferencedContainer = "container:iOSCathageFrameworks.xcodeproj">
+               BlueprintIdentifier = "F1AE1E73201BBAD700E9BA09"
+               BuildableName = "iOSDFULibrary.framework"
+               BlueprintName = "iOSDFULibrary.framework"
+               ReferencedContainer = "container:iOSCarthageFrameworks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F1BFE4882099930000F0DC64"
-            BuildableName = "PopupDialog.framework"
-            BlueprintName = "PopupDialog.framework"
-            ReferencedContainer = "container:iOSCathageFrameworks.xcodeproj">
+            BlueprintIdentifier = "F1AE1E73201BBAD700E9BA09"
+            BuildableName = "iOSDFULibrary.framework"
+            BlueprintName = "iOSDFULibrary.framework"
+            ReferencedContainer = "container:iOSCarthageFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F1BFE4882099930000F0DC64"
-            BuildableName = "PopupDialog.framework"
-            BlueprintName = "PopupDialog.framework"
-            ReferencedContainer = "container:iOSCathageFrameworks.xcodeproj">
+            BlueprintIdentifier = "F1AE1E73201BBAD700E9BA09"
+            BuildableName = "iOSDFULibrary.framework"
+            BlueprintName = "iOSDFULibrary.framework"
+            ReferencedContainer = "container:iOSCarthageFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

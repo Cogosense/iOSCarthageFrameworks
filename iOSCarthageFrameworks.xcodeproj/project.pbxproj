@@ -79,7 +79,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCathageFrameworks" */;
+			buildConfigurationList = F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCarthageFrameworks" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -289,7 +289,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCathageFrameworks" */ = {
+		F1AE1E72201BBAD700E9BA09 /* Build configuration list for PBXProject "iOSCarthageFrameworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1AE1E74201BBAD700E9BA09 /* Debug */,

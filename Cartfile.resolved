@@ -1,3 +1,4 @@
+github "CocoaLumberjack/CocoaLumberjack" "3.4.2"
 github "KyoheiG3/DynamicBlurView" "2.0.2"
 github "NordicSemiconductor/IOS-Pods-DFU-Library" "4.2.1"
 github "Orderella/PopupDialog" "0.7.1"

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CocoaLumberjack.framework.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>PopupDialog.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>F1BFE4882099930000F0DC64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1CDD6A2217E9BDA000F8488</key>
 		<dict>
 			<key>primary</key>
 			<true/>

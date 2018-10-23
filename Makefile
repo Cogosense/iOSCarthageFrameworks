@@ -4,7 +4,7 @@ BUILT_PRODUCTS_DIR ?= $(TOPDIR)/build
 CARTHAGE_SRCDIR = $(TOPDIR)/Carthage/Checkouts
 CARTHAGE_BUILDDIR = $(TOPDIR)/Carthage/Build/iOS
 
-all install : iOSDFULibrary.framework UICircularProgressRing.framework PopupDialog.framework
+all install : iOSDFULibrary.framework UICircularProgressRing.framework PopupDialog.framework CocoaLumberjack.framework
 
 # ======== iOSDFULibrary (Zip)  ===========
 
@@ -59,6 +59,24 @@ $(POPUPDIALOG_FRAMEWORKBUNDLES) :
 	carthage build --verbose --platform iOS PopupDialog
 
 CLEANFILES += $(POPUPDIALOG_TARBALLS) $(POPUPDIALOG_BUILT_PRODUCTS)
+
+# ======== CocoaLumberjack ===========
+
+COCOALUMBERJACK_SRCDIR = $(CARTHAGE_SRCDIR)/CocoaLumberjack
+COCOALUMBERJACK_FRAMEWORKS = CocoaLumberjack.framework
+COCOALUMBERJACK_FRAMEWORKBUNDLES = $(addprefix $(CARTHAGE_BUILDDIR)/, $(COCOALUMBERJACK_FRAMEWORKS))
+COCOALUMBERJACK_TARBALLS = $(addsuffix .tar.bz2, $(COCOALUMBERJACK_FRAMEWORKS))
+COCOALUMBERJACK_BUILT_PRODUCTS = $(addprefix $(BUILT_PRODUCTS_DIR)/, $(COCOALUMBERJACK_FRAMEWORKS))
+
+$(COCOALUMBERJACK_FRAMEWORKS): $(COCOALUMBERJACK_SRCDIR) $(COCOALUMBERJACK_FRAMEWORKBUNDLES) $(COCOALUMBERJACK_TARBALLS) $(COCOALUMBERJACK_BUILT_PRODUCTS)
+
+$(COCOALUMBERJACK_SRCDIR) :
+	carthage checkout CocoaLumberjack
+
+$(COCOALUMBERJACK_FRAMEWORKBUNDLES) :
+	carthage build --verbose --platform iOS CocoaLumberjack
+
+CLEANFILES += $(COCOALUMBERJACK_TARBALLS) $(COCOALUMBERJACK_BUILT_PRODUCTS)
 
 # ======= Common recipes ===========
 #

@@ -1,3 +1,4 @@
 github "Orderella/PopupDialog" ~> 0.7
 github "NordicSemiconductor/IOS-Pods-DFU-Library" ~> 4.1.1
 github "luispadron/UICircularProgressRing"
+github "CocoaLumberjack/CocoaLumberjack"

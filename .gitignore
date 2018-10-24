@@ -2,3 +2,4 @@ build
 Carthage
 DerivedData
 *.tar.bz2
+*.zip

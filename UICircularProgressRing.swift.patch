@@ -1,0 +1,11 @@
+--- UICircularProgressRing/src/UICircularProgressRing/UICircularProgressRing.swift	2018-10-20 16:59:31.000000000 -0700
++++ UICircularProgressRing.patched/src/UICircularProgressRing/UICircularProgressRing.swift	2018-10-23 17:13:45.000000000 -0700
+@@ -1039,7 +1039,7 @@
+      Sets the current value for the progress ring, calling this method while ring is
+      animating will cancel the previously set animation and start a new one.
+      
+-     - Parameter to: The value to be set for the progress ring
++     - Parameter value: The value to be set for the progress ring
+      - Parameter duration: The time interval duration for the animation
+      - Parameter completion: The completion closure block that will be called when
+      animtion is finished (also called when animationDuration = 0), default is nil

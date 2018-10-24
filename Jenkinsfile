@@ -54,6 +54,7 @@ node('osx && ios') {
             withEnv(['PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin']) {
                 Utils.&upgradeBrew()
                 Utils.&brewUpstall('carthage')
+                Utils.&brewUpstall('swiftlint')
                 sh 'make'
             }
         }

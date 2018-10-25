@@ -140,3 +140,4 @@ $(BUILT_PRODUCTS_DIR)/% : %.tar.bz2
 clean: $(CLEANTARGETS)
 	$(RM) -r Carthage
 	$(RM) -r build
+	$(RM) -r DerivedData

@@ -7,17 +7,17 @@
 		<key>CocoaLumberjack.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>10</integer>
 		</dict>
 		<key>PopupDialog.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>9</integer>
 		</dict>
 		<key>UICircularProgressRing.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>iOSDFULibrary.framework copy.xcscheme</key>
 		<dict>
@@ -27,7 +27,7 @@
 		<key>iOSDFULibrary.framework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>8</integer>
 		</dict>
 		<key>iOSDfuFramework.xcscheme</key>
 		<dict>
